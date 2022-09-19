@@ -1,7 +1,9 @@
 package main
 
-import "WordAudio/AudioDecoder"
+import (
+	"WordAudio/httpHandler"
+)
 
 func main() {
-	AudioDecoder.Decoder()
+	httpHandler.StartServer()
 }
