@@ -1,0 +1,8 @@
+FROM golang:latest
+RUN mkdir ../home/app
+
+WORKDIR /../home/app
+COPY . .
+RUN go build -o main .
+EXPOSE 8081
+CMD ["./main"]
